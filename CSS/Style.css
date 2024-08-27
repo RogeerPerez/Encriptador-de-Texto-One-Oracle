@@ -1,0 +1,233 @@
+
+/* Variables de colores */
+:root{
+    --Light-bluex: #f3f5fc;
+    --font:#E5E5E5;
+    --Whitex: #FFFFFF;
+    --DarkBluex:#0a3871; 
+    --Gris: #C5C5C5;
+    --Medium_gray: #67808E;
+    --RGBA:rgba(0,0,0,0.08);
+    --White_blue: #D8DFE8;
+    --Medium_blue:#38710a8a; 
+    --Gray: #343a40;
+    --Gree: #98e27b;
+    --Grisx: #D8DFE8;
+    --Grisox: #495057;
+}
+
+
+
+body{
+    background: var(--Light-bluex);
+    font-family: "Inter", sans-serif;
+}
+
+textarea{
+    font-family: "inter", sans-serif;
+}
+
+/*Header{ 
+
+}*/
+
+.Encabezado_{
+    width: 90%;
+    margin: auto;
+}
+
+.Logo_Alura{
+  margin-top: 40px;
+
+}
+
+/*Main*/
+.main{
+    width: 80.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: calc(100vh - 91px - 72px);
+    align-items: end;
+}
+
+/*Encriptador_Izquierda*/
+
+.Encriptador_Izquierda{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*width: 60%;*/
+
+}
+
+.Area_Texto{
+    width: 80%;
+    font-size: 32px;
+    Color: var(--DarkBluex);
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+
+}
+
+.Area_Texto::placeholder{
+    color: var(--DarkBluex);
+}
+
+/*.Encriptador_Izquierda_{ 
+    
+}*/
+
+.Encriptador_Izquierda_TexoAlerta{ 
+    font-size: 12px;
+    color: var(--Grisox);
+
+
+    
+}
+
+
+.Encriptador_Izquierda_Botones{
+    Display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+
+
+.Boton_Desencriptar,
+.Boton_Encriptar,
+.boton_copiar{
+    border: 1px solid var(--DarkBluex);
+    cursor: pointer;
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+
+}
+
+.Boton_Encriptar{
+    background-color: var(--DarkBluex);
+    color: var(--Whitex);
+}
+
+.Boton_Desencriptar{
+    background-color: var(--Grisx);
+    color: var(--DarkBluex);
+}
+
+
+
+
+.Targeta_Derecha{
+    background-color: var(--Whitex);
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgb(0,0,0,0.8);
+    /*width: 25%;*/
+}
+
+.Targeta_Derecha.ajustar{
+    justify-content: space-between;
+
+}
+
+.Imagen_Muneco{
+    width: 100%;
+}
+
+.oculto{
+    display: none;
+    
+}
+
+.Mensaje_{
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.Mensaje_.ajustar{
+    text-align: left;
+    font-weight: lighter;
+    height: 80%;
+
+}
+
+
+
+
+.Mensaje_Abajo{
+    color: var(--Grisox);
+    font-size: 16px;
+    text-align: center;
+}
+
+.boton_copiar{
+    width: 100%;
+    display: none;
+    background-color: transparent;
+    color: var(--DarkBluex);
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin:auto 40px;
+
+    }
+    
+
+    .Encriptador_Izquierda_Botones{
+        justify-content: center;
+    }
+
+    .Boton_Desencriptar,
+    .Boton_Encriptar{
+        width: 45%;
+    }
+
+    .Targeta_Derecha{
+        height: 100%;
+    }
+
+    .Imagen_Muneco{
+    display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .main{
+        margin: auto 16px;
+    }
+    .Boton_Desencriptar,
+    .Boton_Encriptar{
+        max-width: 100%;
+        width: 100%;
+    }
+}

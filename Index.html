@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Imagenes/2085229.png">  
+    <title>Game Encriptador de Texto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleappis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wgth@400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado-->
+     <header>
+        <div class="Encabezado_">
+         <img src="./Imagenes/Logo.png" alt="Logo_Alura" class="Logo_Alura">  
+        </div>
+     </header>
+
+     <!--Seccion principal-->
+     <main>
+        <div class="main">
+        <div class="Encriptador_Izquierda">
+            <textarea id="AreaTexto" class="Area_Texto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="Encriptador_Izquierda_">
+                <img src="./Imagenes/bi_exclamation-circle-fill.png" alt="">
+                <span class="Encriptador_Izquierda_TexoAlerta">Solo Letras minúsculas y sin acentos</span>
+                <div class= "Encriptador_Izquierda_Botones">
+                    <button id= "BotonEncriptar" class="Boton_Encriptar">Encriptar</button>
+                    <button id= "BotonDesencriptar" class="Boton_Desencriptar">Desencriptar</button>
+                </div>
+            </div> 
+        </div>
+     <!--Seccion de la Derecha-->       
+       
+            <div id="TarjetaDerecha" class="Targeta_Derecha">
+                <img id="ImagenMuneco" class="Imagen_Muneco" src="/Imagenes/Muñeco.png" alt="">
+                <textarea id="MensajeFinal" class="Mensaje_" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="MensajeAbajo" class="Mensaje_Abajo">Ingresa el texto que desees encriptar o desencriptar.</p>  
+                <button id="botoncopiar" class="boton_copiar oculto">Copiar</button> 
+            </div>
+        </div>        
+     </main>
+     <!---<footer></footer> -->
+    <script src="./js/script.js"></script> 
+</body>
+</html>
